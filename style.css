@@ -1,0 +1,27 @@
+.weather-container{
+    display: grid;
+    place-items: center;
+    height: 30rem;
+    width: 30rem;
+    box-shadow: 5px 5px 10px black;
+}
+.weather-show{
+    height: 15rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    gap: 2rem;
+}
+body{
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.504), rgba(238, 19, 19, 0.482), rgba(21, 128, 234, 0.581), rgba(0, 255, 255, 0.548), rgba(0, 0, 255, 0.493));
+    height: 100vh;
+    width: 100vw;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
