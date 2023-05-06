@@ -16,7 +16,7 @@
     gap: 2rem;
 }
 body{
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.504), rgba(238, 19, 19, 0.482), rgba(21, 128, 234, 0.581), rgba(0, 255, 255, 0.548), rgba(0, 0, 255, 0.493));
+    background: linear-gradient(46deg, rgba(0, 0, 0, 0.504), rgba(238, 19, 19, 0.482), rgba(21, 128, 234, 0.581), rgba(0, 255, 255, 0.548), rgba(0, 0, 255, 0.493));
     height: 100vh;
     width: 100vw;
     color:black;
