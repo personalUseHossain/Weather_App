@@ -27,7 +27,7 @@ getWeatherBtn.addEventListener("click", () => {
     const humid = document.getElementById("humid");
     const wind = document.getElementById("wind-speed");
     temp.innerHTML = data.temp + "C";
-    humid.innerHTML = data.humidity;
+    humid.innerHTML = data.humidity + "%";
     wind.innerHTML = data.wind_speed + "KM";
   }
   fetchData();
