@@ -8,20 +8,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Loading animation -->
+    <div class="loading-animation">
+      <img src="./Img/loading animation.gif" alt="" />
+    </div>
+    <!-- Main HTML start -->
+
+    <!-- Full section container -->
     <div class="weather-container">
+      <!-- Top / input section -->
       <div class="weather-input">
         <h1>Enter you city/country name</h1>
         <input id="input" type="text" placeholder="Enter city..." />
         <button id="btn">Get Weather</button>
       </div>
+
+      <!-- Weather show section -->
       <div class="weather-show">
-        TEMARATURE:
-        <h1 id="tem">31C</h1>
-        HUMIDITY:
-        <h3 id="humid">100</h3>
-        WIND-SPPED:
+        <!-- Weather show top / main temerature section -->
+        <div class="big">
+          <h1>TEMARATURE</h1>
+          <h3 id="tem">00C</h3>
+        </div>
+
+        <!-- bottom / other weather information section -->
         <div class="other">
-          <p id="wind-speed">10km</p>
+          <div class="show">
+            <h1>Feel Like</h1>
+            <h3 id="feel">00C</h3>
+          </div>
+          <div class="show">
+            <h1>HUMIDITY</h1>
+            <h3 id="humid">00C</h3>
+          </div>
+          <div class="show">
+            <h1>Wind-Speed</h1>
+            <h3 id="wind-speed">00C</h3>
+          </div>
         </div>
       </div>
     </div>
