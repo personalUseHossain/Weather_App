@@ -1,27 +1,116 @@
-.weather-container{
-    display: grid;
-    place-items: center;
-    height: 30rem;
-    width: 30rem;
-    box-shadow: 5px 5px 10px black;
-}
-.weather-show{
-    height: 15rem;
-    width: 15rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: none;
-    gap: 2rem;
+/* Universal CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body{
     background: linear-gradient(46deg, rgba(0, 0, 0, 0.504), rgba(238, 19, 19, 0.482), rgba(21, 128, 234, 0.581), rgba(0, 255, 255, 0.548), rgba(0, 0, 255, 0.493));
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     color:black;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
+
+/* Loading animaton */
+.loading-animation{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.919);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 2s;
+}
+.loading-animation img{
+    width: 10rem;
+}
+.none{
+    display: none;
+}
+
+/* Main CSS */
+
+
+/* Full container */
+.weather-container{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* top / input section */
+.weather-input{
+    text-align: center;
+}
+.weather-input input{
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.weather-input button{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* weather show section */
+.weather-show{
+    display: none;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 15rem;
+    width: 15rem;
+    align-self: self-start;
+}
+.weather-show .big{
+  width: 60vw;
+  background: rgba(245, 245, 245, 0.788);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  height: 10rem;
+}
+.weather-show .show{
+    width: 15rem;
+    height: 10rem;
+    border-radius: 1rem;
+    background-color: rgba(245, 245, 245, 0.708);
+}
+
+.weather-show .other{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9rem;
+    text-align: center;
+}
+.weather-show h3{
+    font-size: 25px;
+}
+.other-show{
+    width: 8rem;
+    height: 14rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
